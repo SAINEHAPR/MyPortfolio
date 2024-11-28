@@ -17,6 +17,8 @@ body{
 /* Footer ----------------*/
 footer{
     background-color: black;
+    border: 1px solid black;
+    width: 100%;
     color: white;
     /* width: 1500px; */
     font-weight: bolder;
@@ -33,6 +35,55 @@ footer a{
 }
 footer a:hover{
     color:green;
+}
+@media screen and (max-width: 700px) {
+    footer {
+        flex-direction: column; 
+        text-align: center;
+        padding: 20px;
+    }
+}
+.socials{    
+    list-style-type:none;
+    /* padding:20px; */
+    /* margin-top: -50px; */
+    /* margin-left:1200px; */
+}
+
+.socials li{
+    display:inline-block;   
+    padding:4px;
+}
+@media screen and (max-width : 650px) {
+    .footer{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2px;
+        justify-content: space-around;
+    }
+    .socials li {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .socials img {
+        width: 34px; 
+        height: 34px;
+    }
+    /* Socials List
+    .socials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    Socials List
+    .socials {
+        justify-content: space-around;
+    } */
+}
+.socials img{
+    width:32px;
 }
 .logo1{
     opacity: 0.8;
@@ -64,20 +115,7 @@ footer a:hover{
 .logo5:hover{
     opacity: 1.0;
 }
-.socials{
-    list-style-type:none;
-    /* padding:20px; */
-    /* margin-top: -50px; */
-    /* margin-left:1200px; */
-}
 
-.socials li{
-    display:inline-block;   
-    padding:4px;
-}
-.socials img{
-    width:32px;
-}
 
 
 /* Links ----------------------------*/
@@ -385,10 +423,7 @@ a:hover{
         height: auto;
     }
 
-    /* Socials List */
-    .socials {
-        justify-content: space-around;
-    }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -420,12 +455,6 @@ a:hover{
         height: auto;
     }
 
-    /* Socials List */
-    .socials {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width: 320px) {
