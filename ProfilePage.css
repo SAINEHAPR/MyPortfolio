@@ -144,7 +144,7 @@ a:hover{
 }
 /* HOME PAGE --------------------------------------------------------------------*/
 .homepage{
-    background-image: url(./placeholder-images/bg-coffee-shop.jpg);
+    background-image: url(./bg-coffee-shop.jpg);
     margin: 0;
     display:flex;
     /* background-color: rgba(0, 0, 0, 0.5); */
@@ -191,7 +191,7 @@ a:hover{
 
 /* Resume------------------------------------------------------------------------- */
 #resume header::before{
-    background-image: url(./placeholder-images/bg-home-office-city.jpg);
+    background-image: url(./bg-home-office-city.jpg);
     /* background-repeat: no-repeat; */
     background-size: cover;
     height: 400px;
